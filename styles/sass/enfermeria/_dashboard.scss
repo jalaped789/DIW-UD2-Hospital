@@ -1,0 +1,78 @@
+$primary-color: #17a2b8; // Color principal para enfermería
+$hover-color: darken($primary-color, 15%);
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+}
+
+.dashboard-container {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+h1 {
+    margin-bottom: 50px;
+    color: #333;
+}
+
+.buttons-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.dashboard-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    background-color: $primary-color;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.dashboard-button i {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.dashboard-button:hover {
+    transform: translateY(-5px);
+    background-color: $hover-color;
+}
+
+/* Botón de volver */
+.back-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: $primary-color;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+.back-button i {
+    margin-right: 5px;
+}
+
+.back-button:hover {
+    color: $hover-color;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .buttons-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

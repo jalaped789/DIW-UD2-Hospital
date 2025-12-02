@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urgencias</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center p-6">
+
+    <!-- Botón de volver -->
+    <a href="../home.html" class="flex items-center text-blue-600 hover:text-blue-800 mb-6">
+        <i class="fa-solid fa-arrow-left mr-2"></i> Volver
+    </a>
+
+    <h1 class="text-3xl font-bold mb-10">Urgencias</h1>
+
+    <!-- Botones de módulo -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-4xl">
+        <a href="registro-urgencias.html" class="bg-red-500 hover:bg-red-600 text-white rounded-xl flex flex-col items-center justify-center h-48 shadow-lg transform hover:-translate-y-1 transition">
+            <i class="fa-solid fa-notes-medical text-5xl mb-4"></i>
+            <span class="text-xl font-semibold">Registro en Urgencias</span>
+        </a>
+        <a href="triaje.html" class="bg-yellow-500 hover:bg-yellow-600 text-white rounded-xl flex flex-col items-center justify-center h-48 shadow-lg transform hover:-translate-y-1 transition">
+            <i class="fa-solid fa-heart-pulse text-5xl mb-4"></i>
+            <span class="text-xl font-semibold">Triaje</span>
+        </a>
+    </div>
+
+</body>
+</html>
