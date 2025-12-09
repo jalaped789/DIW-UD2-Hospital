@@ -1,3 +1,120 @@
-<h1 class="text-3xl font-bold mb-6">Registro en Urgencias</h1>
-<p>Contenido de la página de triaje...</p>
-<a href="dashboard.html" class="text-blue-600 hover:text-blue-800 mt-4 inline-block">&larr; Volver</a>
+<script src="https://cdn.tailwindcss.com"></script>
+<div style="display: flex; flex-direction: column; align-items: center">
+  <a
+    href="dashboard.html"
+    class="text-blue-600 hover:text-blue-800 mt-4 inline-block"
+    >&larr; Volver</a
+  >
+  <h1 class="text-3xl font-bold mb-6">Registro en Urgencias</h1>
+
+  <div class="max-w-4xl mx-auto p-6 bg-white shadow-md rounded-lg">
+    <h1 class="text-2xl font-bold mb-4">Triage de Urgencias</h1>
+
+    <!-- Datos del paciente -->
+    <section class="mb-6">
+      <h2 class="text-xl font-semibold mb-2">Datos del Paciente</h2>
+      <div class="grid grid-cols-2 gap-4">
+        <div>
+          <label class="block text-gray-700 font-medium">Nombre:</label>
+          <input type="text" class="w-full border rounded p-2" />
+        </div>
+        <div>
+          <label class="block text-gray-700 font-medium">Edad:</label>
+          <input type="number" class="w-full border rounded p-2" />
+        </div>
+        <div>
+          <label class="block text-gray-700 font-medium">Género:</label>
+          <select class="w-full border rounded p-2">
+            <option>Masculino</option>
+            <option>Femenino</option>
+            <option>Otro</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-gray-700 font-medium">Teléfono:</label>
+          <input type="text" class="w-full border rounded p-2" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Motivo de consulta -->
+    <section class="mb-6">
+      <h2 class="text-xl font-semibold mb-2">Motivo de Consulta</h2>
+      <textarea class="w-full border rounded p-2" rows="3"></textarea>
+    </section>
+
+    <!-- Signos vitales -->
+    <section class="mb-6">
+      <h2 class="text-xl font-semibold mb-2">Signos Vitales</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div>
+          <label class="block text-gray-700 font-medium"
+            >Presión arterial:</label
+          >
+          <input type="text" class="w-full border rounded p-2" />
+        </div>
+        <div>
+          <label class="block text-gray-700 font-medium"
+            >Frecuencia cardíaca:</label
+          >
+          <input type="text" class="w-full border rounded p-2" />
+        </div>
+        <div>
+          <label class="block text-gray-700 font-medium">Temperatura:</label>
+          <input type="text" class="w-full border rounded p-2" />
+        </div>
+        <div>
+          <label class="block text-gray-700 font-medium"
+            >Frecuencia respiratoria:</label
+          >
+          <input type="text" class="w-full border rounded p-2" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Nivel de prioridad -->
+    <section class="mb-6">
+      <h2 class="text-xl font-semibold mb-2">Nivel de Prioridad</h2>
+      <div class="flex gap-4">
+        <button
+          class="flex-1 bg-red-600 text-white font-bold py-2 rounded hover:bg-red-700"
+        >
+          Emergencia
+        </button>
+        <button
+          class="flex-1 bg-yellow-400 font-bold py-2 rounded hover:bg-yellow-500"
+        >
+         Urgente
+        </button>
+        <button
+          class="flex-1 bg-green-500 font-bold py-2 rounded hover:bg-green-600"
+        >
+          No urgente
+        </button>
+        <button
+          class="flex-1 bg-blue-500 font-bold py-2 rounded hover:bg-blue-600"
+        >
+          Consulta general
+        </button>
+      </div>
+    </section>
+
+    <!-- Observaciones -->
+    <section class="mb-6">
+      <h2 class="text-xl font-semibold mb-2">Observaciones</h2>
+      <textarea
+        class="w-full border rounded p-2"
+        rows="3"
+        placeholder="Notas adicionales del paciente"
+      ></textarea>
+    </section>
+
+    <div class="text-right">
+      <button
+        class="bg-indigo-600 text-white font-bold py-2 px-6 rounded hover:bg-indigo-700 w-full"
+      >
+        Guardar Triage
+      </button>
+    </div>
+  </div>
+</div>

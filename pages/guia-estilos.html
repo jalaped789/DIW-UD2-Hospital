@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guía de Estilos - Proyecto Urgencias</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <header class="bg-indigo-600 text-white p-6 mb-8">
+    <h1 class="text-3xl font-bold">Guía de Estilos - Sistema de Urgencias</h1>
+    <p class="mt-1 text-indigo-200">Referencia visual de todos los componentes y estilos usados en el proyecto</p>
+  </header>
+
+  <main class="max-w-7xl mx-auto p-6 space-y-10">
+
+    <!-- Tipografía -->
+    <section>
+      <h2 class="text-2xl font-bold mb-4">Tipografía</h2>
+      <p class="text-base mb-2">Texto base - Lorem ipsum dolor sit amet</p>
+      <p class="text-lg mb-2">Texto grande - Lorem ipsum dolor sit amet</p>
+      <p class="text-xl mb-2 font-semibold">Texto extra grande - Lorem ipsum dolor sit amet</p>
+      <p class="text-sm text-gray-600">Texto pequeño / secundario</p>
+    </section>
+
+    <!-- Botones -->
+    <section>
+      <h2 class="text-2xl font-bold mb-4">Botones</h2>
+      <div class="flex gap-4 flex-wrap">
+        <button class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700">Guardar</button>
+        <button class="bg-red-600 text-white py-2 px-4 rounded hover:bg-red-700">Eliminar</button>
+        <button class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600">Aceptar</button>
+        <button class="bg-yellow-400 text-white py-2 px-4 rounded hover:bg-yellow-500">Advertencia</button>
+      </div>
+    </section>
+
+    <!-- Etiquetas de prioridad -->
+    <section>
+      <h2 class="text-2xl font-bold mb-4">Etiquetas de Prioridad</h2>
+      <div class="flex gap-4">
+        <span class="px-3 py-1 rounded text-white bg-red-600">Rojo - Emergencia</span>
+        <span class="px-3 py-1 rounded text-white bg-yellow-400">Amarillo - Urgente</span>
+        <span class="px-3 py-1 rounded text-white bg-green-500">Verde - No urgente</span>
+        <span class="px-3 py-1 rounded text-white bg-blue-500">Azul - Consulta general</span>
+      </div>
+    </section>
+
+    <!-- Tablas -->
+    <section>
+      <h2 class="text-2xl font-bold mb-4">Tablas</h2>
+      <div class="overflow-x-auto">
+        <table class="min-w-full border border-gray-200 divide-y divide-gray-200">
+          <thead class="bg-gray-100">
+            <tr>
+              <th class="px-4 py-2 text-left font-semibold">Nombre</th>
+              <th class="px-4 py-2 text-left font-semibold">Edad</th>
+              <th class="px-4 py-2 text-left font-semibold">Prioridad</th>
+              <th class="px-4 py-2 text-left font-semibold">Área</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-200">
+            <tr class="hover:bg-gray-50">
+              <td class="px-4 py-2">Juan Pérez</td>
+              <td class="px-4 py-2">45</td>
+              <td class="px-4 py-2"><span class="px-2 py-1 rounded text-white bg-red-600">Rojo</span></td>
+              <td class="px-4 py-2">Emergencia</td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-4 py-2">María Gómez</td>
+              <td class="px-4 py-2">30</td>
+              <td class="px-4 py-2"><span class="px-2 py-1 rounded text-white bg-yellow-400">Amarillo</span></td>
+              <td class="px-4 py-2">Observación</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Formularios -->
+    <section>
+      <h2 class="text-2xl font-bold mb-4">Formularios</h2>
+      <form class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <label class="block text-gray-700 font-medium mb-1">Nombre del paciente</label>
+          <input type="text" class="w-full border rounded p-2" placeholder="Juan Pérez">
+        </div>
+        <div>
+          <label class="block text-gray-700 font-medium mb-1">Edad</label>
+          <input type="number" class="w-full border rounded p-2" placeholder="45">
+        </div>
+        <div>
+          <label class="block text-gray-700 font-medium mb-1">Motivo de consulta</label>
+          <textarea class="w-full border rounded p-2" rows="3" placeholder="Descripción de síntomas"></textarea>
+        </div>
+        <div>
+          <label class="block text-gray-700 font-medium mb-1">Prioridad</label>
+          <select class="w-full border rounded p-2">
+            <option>Rojo - Emergencia</option>
+            <option>Amarillo - Urgente</option>
+            <option>Verde - No urgente</option>
+            <option>Azul - Consulta general</option>
+          </select>
+        </div>
+        <div class="md:col-span-2 text-right mt-2">
+          <button class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700">Guardar</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="bg-gray-200 text-gray-700 p-4 mt-10 text-center rounded">
+    © 2025 Sistema de Urgencias
+  </footer>
+
+</body>
+</html>

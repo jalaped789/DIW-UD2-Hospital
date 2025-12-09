@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Lista citas</title>
+    <style>
+      h3 {
+        margin: 4px;
+      }
+      table {
+        width: 100%;
+      }
+      tr th {
+        background-color: #f2f2f2;
+        color: #000;
+      }
+
+      #lista-citas tr:hover {
+        background-color: #106826;
+        cursor: pointer;
+        color: #f2f2f2;
+        font-weight: bold;
+        transition: 250ms;
+      }
+
+      #lista-citas {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body
+    style="display: flex; flex-direction: column; align-items: center; padding: 20px; gap: 15px;">
+    <a style="width: fit-content" href="./dashboard.html">
+      <i class="fa-solid fa-arrow-left"></i> Volver
+    </a>
+    <div style="display: flex; justify-content: center; width: 100%; gap: 130px;">
+      <div>
+        <table id="lista-citas" border="1" cellpadding="8" cellspacing="0">
+          <thead>
+            <tr>
+              <th>Id Cita</th>
+              <th>Fecha</th>
+              <th>Hora</th>
+              <th>Motivo</th>
+              <th>Id Paciente</th>
+              <th>Id Médico</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>2024-06-15</td>
+              <td>10:00</td>
+              <td>Consulta general</td>
+              <td>1001</td>
+              <td>5001</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>2024-06-16</td>
+              <td>11:30</td>
+              <td>Revisión anual</td>
+              <td>1002</td>
+              <td>5002</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>2024-06-17</td>
+              <td>09:15</td>
+              <td>Consulta especializada</td>
+              <td>1003</td>
+              <td>5003</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h3>Información de la cita</h3>
+        <table border="1" cellpadding="8" cellspacing="0">
+          <tr>
+            <th>Id Cita</th>
+            <th>Fecha</th>
+            <th>Hora</th>
+            <th>Motivo</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>2024-06-15</td>
+            <td>10:00</td>
+            <td>Consulta general</td>
+          </tr>
+        </table>
+
+        <h3>Datos del Paciente</h3>
+        <table border="1" cellpadding="8" cellspacing="0">
+          <tr>
+            <th>Id Paciente</th>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Género</th>
+            <th>Teléfono</th>
+            <th>Dirección</th>
+          </tr>
+          <tr>
+            <td>1001</td>
+            <td>Juan Pérez</td>
+            <td>45</td>
+            <td>Masculino</td>
+            <td>555-1234</td>
+            <td>Calle Falsa 123</td>
+          </tr>
+        </table>
+
+        <h3>Historial Médico</h3>
+        <table border="1" cellpadding="8" cellspacing="0">
+          <tr>
+            <th>Alergias</th>
+            <th>Medicamentos actuales</th>
+            <th>Enfermedades previas</th>
+          </tr>
+          <tr>
+            <td>Ninguna</td>
+            <td>Ninguno</td>
+            <td>Hipertensión</td>
+          </tr>
+        </table>
+
+        <h3>Examen Físico</h3>
+        <table border="1" cellpadding="8" cellspacing="0">
+          <tr>
+            <th>Presión arterial</th>
+            <th>Frecuencia cardíaca</th>
+            <th>Temperatura</th>
+            <th>Observaciones</th>
+          </tr>
+          <tr>
+            <td>130/85 mmHg</td>
+            <td>75 bpm</td>
+            <td>36.7 °C</td>
+            <td>Paciente en buen estado general.</td>
+          </tr>
+        </table>
+
+        <h3>Plan de Seguimiento</h3>
+        <table border="1" cellpadding="8" cellspacing="0">
+          <tr>
+            <th>Próxima cita</th>
+            <th>Recomendaciones</th>
+          </tr>
+          <tr>
+            <td>2024-12-15</td>
+            <td>Mantener dieta saludable y ejercicio regular.</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
